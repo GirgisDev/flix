@@ -88,7 +88,7 @@ export default {
               this.paginationArray.push(i);
             }
           } else {
-            if (this.currentPage >= data.total_pages)
+            if (this.currentPage >= this.totalPages)
               return;
             this.paginationArray = [];
             for (var i = this.currentPage - 4; i <= N; i++) {
